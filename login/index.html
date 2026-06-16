@@ -4,33 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glassmorphism Login Form | CodingNepal</title>
+  <title>Masuk PsikoChizz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="wrapper">
-    <form action="#">
-      <h2>Login</h2>
-        <div class="input-field">
-        <input type="text" required>
-        <label>Enter your email</label>
+    <!-- Added class="login" and id="loginForm" from the image -->
+    <form action="#" class="login" id="loginForm">
+      <h2>Masuk</h2>
+      
+      <!-- Added id="username" from the image -->
+      <div class="input-field field">
+        <input type="text" required id="username">
+        <label>Email</label>
       </div>
-      <div class="input-field">
-        <input type="password" required>
-        <label>Enter your password</label>
+      
+      <!-- Added id="password" from the image -->
+      <div class="input-field field">
+        <input type="password" required id="password">
+        <label>Masukkan kata sandi</label>
       </div>
+      
       <div class="forget">
         <label for="remember">
           <input type="checkbox" id="remember">
-          <p>Remember me</p>
+          <p>Ingat aku</p>
         </label>
-        <a href="#">Forgot password?</a>
+        <a href="#">Lupa kata sandi?</a>
       </div>
-      <button type="submit">Log In</button>
+      
+      <button type="submit">Masuk</button>
+      
       <div class="register">
-        <p>Don't have an account? <a href="#">Register</a></p>
+        <p>Tidak mempunyai akun? <a href="register.html">Daftar</a></p>
       </div>
     </form>
   </div>
+  
+  <div id="alertBox" class="alert" style="display:none;"></div>
+<form/>
+
+<script src="login.js"></script>
 </body>
 </html>
